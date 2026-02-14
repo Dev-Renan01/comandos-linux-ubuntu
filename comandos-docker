@@ -1,0 +1,20 @@
+# 🐳 Docker
+
+## 📦 Imagens
+```bash
+docker pull imagem              # Baixa imagem
+docker images                   # Lista imagens
+docker rmi imagem               # Remove imagem
+```
+
+## 🚀 Containers
+```bash
+docker run imagem               # Executa container
+docker run -it imagem bash      # Interativo
+docker run -d imagem            # Background
+docker ps                       # Containers ativos
+docker ps -a                    # Todos containers
+docker stop ID                  # Para container
+docker rm ID                    # Remove container
+docker logs ID                  # Mostra logs
+docker exec -it ID bash         # Acessa c
