@@ -1,0 +1,70 @@
+# 🌿 Git
+
+## ⚙️ Configuração Inicial
+```bash
+git config --global user.name "Seu Nome"        # Define nome global
+git config --global user.email "seu@email.com"  # Define email global
+git config --list                               # Lista configurações
+git config --global core.editor nano            # Define editor padrão
+```
+
+---
+## 📁 Inicialização e Clone
+```bash
+git init                        # Inicia repositório
+git clone url                   # Clona projeto remoto
+```
+
+---
+
+## 📌 Controle de Versão
+```bash
+git status                      # Mostra estado do repositório
+git add .                       # Adiciona todos arquivos
+git add arquivo.txt             # Adiciona arquivo específico
+git commit -m "mensagem"        # Cria commit
+git commit --amend              # Edita último commit
+```
+
+---
+
+## 🌿 Branches
+```bash
+git branch                      # Lista branches
+git branch nova-branch          # Cria branch
+git checkout nova-branch        # Troca de branch
+git checkout -b nova-branch     # Cria e troca
+git merge branch                # Junta branch
+git branch -d branch            # Deleta branch
+```
+
+---
+
+## 🔄 Sincronização com Remoto
+```bash
+git remote -v                   # Mostra repositório remoto
+git remote add origin url       # Adiciona remoto
+git push -u origin main         # Envia branch principal
+git push                        # Envia alterações
+git pull                        # Atualiza repositório
+git fetch                       # Busca alterações sem mesclar
+```
+
+---
+
+## 📜 Histórico e Logs
+```bash
+git log                         # Histórico completo
+git log --oneline               # Histórico resumido
+git diff                        # Mostra diferenças
+```
+
+---
+
+## 🧹 Correções e Reset
+```bash
+git reset --soft HEAD~1         # Volta 1 commit (mantém alterações)
+git reset --hard HEAD~1         # Remove commit e alterações
+git stash                       # Salva alterações temporariamente
+git stash pop                   # Recupera alterações salvas
+```
