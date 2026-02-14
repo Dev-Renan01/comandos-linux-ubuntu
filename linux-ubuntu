@@ -1,0 +1,69 @@
+# 🐧 Linux (Ubuntu)
+
+## 📂 Arquivos e Diretórios
+```bash
+pwd                     # Mostra diretório atual
+ls -la                  # Lista arquivos detalhados
+cd pasta                # Entra na pasta
+cd ..                   # Volta diretório
+mkdir pasta             # Cria pasta
+rm -r pasta             # Remove pasta
+cp origem destino       # Copia arquivo/pasta
+mv origem destino       # Move/renomeia
+touch arquivo.txt       # Cria arquivo vazio
+clear ou Ctrl + L       # Limpa terminal
+```
+
+## 📦 Gerenciamento de Pacotes (APT)
+```bash
+sudo apt update         # Atualiza lista de pacotes
+sudo apt upgrade        # Atualiza sistema
+sudo apt install pkg    # Instala pacote
+sudo apt remove pkg     # Remove pacote
+sudo apt autoremove     # Remove dependências não usadas
+apt search nome         # Busca pacote
+```
+
+## 🔐 SSH (Acesso Remoto à VM)
+
+```bash
+sudo apt install openssh-server     # Instala servidor SSH
+sudo systemctl start ssh            # Inicia serviço SSH
+sudo systemctl enable ssh           # Inicia automaticamente no boot
+sudo systemctl status ssh           # Verifica status do SSH
+
+ssh usuario@ip                      # Conecta a máquina remota
+ssh -i chave.pem usuario@ip         # Conecta usando chave privada
+exit                                # Sai da sessão SSH
+```
+
+## 📊 Sistema
+```bash
+ps aux                  # Lista processos
+kill -9 PID             # Força encerramento
+df -h                   # Espaço em disco
+free -h                 # Memória RAM
+top                     # Monitoramento
+uname -a                # Informações do sistema
+```
+
+## 👤 Usuários
+```bash
+whoami                  # Mostra usuário atual
+adduser nome            # Cria usuário
+deluser nome            # Remove usuário
+passwd nome             # Altera senha
+groups                  # Mostra grupos
+```
+
+## 🌐 Rede
+
+```bash
+ip a                    # Mostra IP e interfaces
+ping host               # Testa conexão
+curl site.com           # Faz requisição HTTP
+wget url                # Baixa arquivo
+ss -tulnp               # Mostra portas abertas
+netstat -tulnp          # Mostra portas (antigo)
+traceroute host         # Rota até destino
+```
