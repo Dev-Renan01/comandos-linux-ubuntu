@@ -37,6 +37,25 @@ ssh -i chave.pem usuario@ip         # Conecta usando chave privada
 exit                                # Sai da sessão SSH
 ```
 
+📁 Manipulação de Arquivos e Pastas
+cp -r pasta destino        # Copia pasta inteira
+mv arquivo.txt pasta/      # Move arquivo para pasta
+mv nome.txt novo.txt       # Renomeia arquivo
+rm -i arquivo.txt          # Remove pedindo confirmação
+rmdir pasta                # Remove pasta vazia
+file arquivo.txt           # Mostra tipo do arquivo
+stat arquivo.txt           # Mostra detalhes completos
+tree                       # Mostra estrutura de pastas (se instalado)
+
+
+📄 Visualização de Arquivos
+cat arquivo.txt            # Mostra conteúdo inteiro
+less arquivo.txt           # Visualiza paginado
+more arquivo.txt           # Visualiza paginado (mais simples)
+head arquivo.txt           # Mostra primeiras linhas
+tail arquivo.txt           # Mostra últimas linhas
+
+
 ## 📊 Sistema
 ```bash
 ps aux                  # Lista processos
@@ -56,8 +75,11 @@ passwd nome             # Altera senha
 groups                  # Mostra grupos
 ```
 
-## 🌐 Rede
+📦 Compactação
+zip arquivo.zip arquivo.txt        # Compacta
+unzip arquivo.zip                  # Descompacta
 
+## 🌐 Rede
 ```bash
 ip a                    # Mostra IP e interfaces
 ping host               # Testa conexão
