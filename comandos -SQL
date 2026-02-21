@@ -1,0 +1,62 @@
+🧠 Banco de Dados
+--
+
+SHOW DATABASES;                  # Lista todos os bancos
+
+CREATE DATABASE nome_db;         # Cria um banco
+
+USE nome_db;                     # Seleciona o banco
+
+DROP DATABASE nome_db;           # Remove o banco
+
+---
+📂 Tabelas
+---
+SHOW TABLES;                     # Lista tabelas do banco atual
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);                               # Cria uma tabela
+
+DESC usuarios;                   # Mostra estrutura da tabela
+
+SHOW CREATE TABLE usuarios;      # Mostra SQL completo da criação
+
+DROP TABLE usuarios;             # Remove a tabela
+
+--- 
+➕ Inserindo Dados
+---
+INSERT INTO usuarios (nome)
+VALUES ('Thiago');               # Insere um registro
+
+INSERT INTO usuarios (nome)
+VALUES ('Ana'), ('Carlos');      # Insere múltiplos registros
+
+---
+🔍 Consultando Dados
+---
+SELECT * FROM usuarios;          # Lista todos os registros
+
+SELECT nome FROM usuarios;       # Seleciona coluna específica
+
+SELECT * FROM usuarios
+WHERE id = 1;                    # Filtro
+
+SELECT * FROM usuarios
+ORDER BY nome ASC;               # Ordena
+
+SELECT COUNT(*) FROM usuarios;   # Conta registros
+✏ Atualizando Dados
+UPDATE usuarios
+SET nome = 'Novo Nome'
+WHERE id = 1;
+
+---
+❌ Removendo Dados
+---
+DELETE FROM usuarios
+WHERE id = 1;                    # Remove registro específico
+
+TRUNCATE TABLE usuarios;         # Remove TODOS os registros
