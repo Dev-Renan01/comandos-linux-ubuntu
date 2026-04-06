@@ -68,3 +68,43 @@ git reset --hard HEAD~1         # Remove commit e alterações
 git stash                       # Salva alterações temporariamente
 git stash pop                   # Recupera alterações salvas
 ```
+
+# ------- Checklist inicial (Criaçao de um projeto)------- #
+
+```bash
+# 1. Entrar na pasta do projeto
+cd nome-do-projeto
+
+# 2. Configurar Git (uma vez só)
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@email.com"
+
+# 3. Criar .gitignore
+touch .gitignore
+
+# 4. Inicializar repositório
+git init
+
+# 5. Adicionar arquivos
+git add .
+
+# 6. Primeiro commit
+git commit -m "Projeto inicial Spring Boot"
+
+# 7. Conectar com GitHub
+git remote add origin https://github.com/seu-usuario/nome-do-projeto.git
+
+# 8. Definir branch principal
+git branch -M main
+
+# 9. Enviar projeto (primeira vez)
+git push -u origin main
+
+# ----------------------------------
+
+# 🔁 Uso normal depois disso
+git add .
+git commit -m "mensagem"
+git push
+```
+
